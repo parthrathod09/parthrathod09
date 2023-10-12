@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gillroy";
+
+}
+*::selection{
+    background-color: black;
+    color: white;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#page1{
+    min-height: 100vh;
+    /* background-color: red; */
+    position: relative;
+    padding: 0 1vw ;
+    padding-top: 20vh;
+
+}
+#page1 h1{
+    font-family: Futura;
+    font-size: 15.8vw;
+    text-transform: uppercase;
+    line-height: 13vw;
+    letter-spacing: -8px;
+}
+#video-container{
+    height: 100vh;
+    width: 100%;
+    /* background: black; */
+    margin: 2vh 1vh;
+}
+
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#video-container #play{
+    padding: 3vw 2VW;
+    background-color: black;
+    font-family: futura;
+    color: white;
+    font-size: 1.5vw;
+    position: fixed;
+    text-transform: uppercase;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 1vw;
+}
+#page2 .elem{
+    height: 100%;
+    width: 30%;
+    overflow: hidden;
+}
+#page2 .elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.2;
+}
+@media (max-width:600px) {
+    #page1{
+        /* background-color: red; */
+        width: 100%;
+        min-height: 70vh;
+    }
+    #page1 h1{
+        font-size: 15.5vw;
+        letter-spacing: -3px;
+    }
+    #video-container{
+        height: 25vh;
+        margin: 3vw;
+
+    }
+}
